@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/emergency_red"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_lg"
+    tools:context=".sos.SosCountdownActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_xl"
+        android:accessibilityHeading="true"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.1"
+        android:text="@string/sos_activating"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_heading" />
+
+    <TextView
+        android:id="@+id/tvTrigger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_xs"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_supporting" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <FrameLayout
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:background="@drawable/bg_countdown_ring">
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/countdownProgress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAccessibility="no"
+            android:max="1000"
+            app:indicatorColor="@color/white"
+            app:indicatorSize="240dp"
+            app:trackColor="@android:color/transparent"
+            app:trackThickness="8dp" />
+
+        <TextView
+            android:id="@+id/tvCountdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:accessibilityLiveRegion="assertive"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_countdown" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvWhatNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_lg"
+        android:gravity="center"
+        android:lineSpacingExtra="2dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_body" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:text="@string/sos_cancel"
+        android:textColor="@color/emergency_red_dark"
+        android:textSize="@dimen/text_size_section"
+        app:backgroundTint="@color/white"
+        app:icon="@drawable/ic_close"
+        app:iconGravity="textStart"
+        app:iconTint="@color/emergency_red_dark" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSendNow"
+        style="@style/Widget.SafeHer.Button.Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_sm"
+        android:text="@string/sos_send_now"
+        android:textColor="@color/white" />
+
+</LinearLayout>

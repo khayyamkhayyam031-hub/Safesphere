@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="96dp"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <FrameLayout
+            android:layout_width="@dimen/icon_tile_size"
+            android:layout_height="@dimen/icon_tile_size"
+            android:background="@drawable/bg_icon_tile">
+
+            <ImageView
+                android:id="@+id/ivIcon"
+                android:layout_width="@dimen/icon_size_medium"
+                android:layout_height="@dimen/icon_size_medium"
+                android:layout_gravity="center"
+                android:importantForAccessibility="no"
+                app:tint="@color/primary_dark" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvLabel"
+            style="@style/Text.SafeHer.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="2" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

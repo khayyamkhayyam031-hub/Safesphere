@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/screen_padding"
+    tools:context=".auth.SplashActivity">
+
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="96dp"
+        android:layout_height="112dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_shield" />
+
+    <TextView
+        style="@style/Text.SafeHer.Display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_lg"
+        android:text="@string/app_name" />
+
+    <TextView
+        style="@style/Text.SafeHer.Supporting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_xs"
+        android:text="@string/app_tagline" />
+
+    <LinearLayout
+        android:id="@+id/lockGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_xl"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/Text.SafeHer.Section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lock_locked_title" />
+
+        <TextView
+            android:id="@+id/tvLockReason"
+            style="@style/Text.SafeHer.Supporting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:gravity="center" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUnlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:paddingStart="@dimen/spacing_xl"
+            android:paddingEnd="@dimen/spacing_xl"
+            android:text="@string/lock_unlock"
+            app:icon="@drawable/ic_lock"
+            xmlns:app="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+
+</LinearLayout>

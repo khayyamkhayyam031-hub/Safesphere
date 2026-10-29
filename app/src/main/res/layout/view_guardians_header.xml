@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/spacing_md"
+    android:paddingBottom="@dimen/spacing_sm">
+
+    <TextView
+        style="@style/Text.SafeHer.Heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:accessibilityHeading="true"
+        android:text="@string/guardians_title" />
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        style="@style/Text.SafeHer.Supporting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_md"
+        android:background="@drawable/bg_banner_info"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:layout_width="@dimen/icon_size_small"
+            android:layout_height="@dimen/icon_size_small"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_info"
+            app:tint="@color/primary_dark" />
+
+        <TextView
+            style="@style/Text.SafeHer.Supporting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:text="@string/guardians_local_note"
+            android:textColor="@color/primary_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emptyState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_lg"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/emptyInclude"
+            layout="@layout/view_empty_state" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/errorBanner"
+        layout="@layout/view_error_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_md"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvListLabel"
+        style="@style/Widget.SafeHer.SectionHeader"
+        android:layout_marginTop="@dimen/spacing_lg"
+        android:text="@string/guardians_list_label" />
+</LinearLayout>

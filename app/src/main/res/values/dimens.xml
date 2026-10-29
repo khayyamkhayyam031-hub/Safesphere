@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing -->
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">16dp</dimen>
+    <dimen name="spacing_lg">24dp</dimen>
+    <dimen name="spacing_xl">32dp</dimen>
+    <dimen name="screen_padding">20dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+
+    <!-- Shapes -->
+    <dimen name="card_corner_radius">18dp</dimen>
+    <dimen name="button_corner_radius">14dp</dimen>
+    <dimen name="input_corner_radius">12dp</dimen>
+
+    <!-- Controls -->
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="touch_target_min">48dp</dimen>
+    <dimen name="sos_button_size">184dp</dimen>
+    <dimen name="sos_ring_size">224dp</dimen>
+    <dimen name="call_action_size">72dp</dimen>
+
+    <!-- Typography -->
+    <dimen name="text_size_display">28sp</dimen>
+    <dimen name="text_size_heading">24sp</dimen>
+    <dimen name="text_size_section">18sp</dimen>
+    <dimen name="text_size_body">16sp</dimen>
+    <dimen name="text_size_supporting">14sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_sos">44sp</dimen>
+    <dimen name="text_size_countdown">96sp</dimen>
+
+    <!-- Icons and avatars -->
+    <dimen name="icon_size_small">20dp</dimen>
+    <dimen name="icon_size_medium">24dp</dimen>
+    <dimen name="icon_tile_size">44dp</dimen>
+    <dimen name="avatar_size_small">44dp</dimen>
+    <dimen name="avatar_size_large">96dp</dimen>
+    <dimen name="avatar_size_call">120dp</dimen>
+</resources>

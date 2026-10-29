@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Brand -->
+    <color name="primary_deep_purple">#5B3CC4</color>
+    <color name="primary_dark">#382477</color>
+    <color name="primary_light">#EEE8FF</color>
+    <color name="accent_text">#5B3CC4</color>
+
+    <!-- Emergency: reserved for SOS and emergency states -->
+    <color name="emergency_red">#D92D3A</color>
+    <color name="emergency_red_dark">#A81E2A</color>
+    <color name="emergency_red_light">#FDECEE</color>
+    <color name="emergency_red_text">#B4202C</color>
+    <color name="sos_ring">#F6C9CD</color>
+
+    <!-- Neutrals -->
+    <color name="background">#F7F7FB</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="main_text">#202033</color>
+    <color name="secondary_text">#69697A</color>
+    <color name="divider">#E6E5ED</color>
+    <color name="outline">#C9C8D4</color>
+    <color name="neutral_chip_bg">#EFEFF4</color>
+    <color name="neutral_chip_text">#4A4A5A</color>
+
+    <!-- Status -->
+    <color name="success">#18865B</color>
+    <color name="success_light">#E3F4EC</color>
+    <color name="success_text">#116B48</color>
+    <color name="warning">#C57A12</color>
+    <color name="warning_light">#FCF1E0</color>
+    <color name="warning_text">#8A5207</color>
+
+    <!-- Fake call screen -->
+    <color name="call_background">#22174F</color>
+    <color name="call_text_secondary">#C9C2EA</color>
+
+    <color name="on_primary">#FFFFFF</color>
+</resources>

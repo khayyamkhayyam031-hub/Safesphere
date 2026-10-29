@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SafeHer</string>
+    <string name="app_tagline">Your Safety, Your Power</string>
+    <string name="empty" translatable="false" />
+
+    <!-- Common -->
+    <string name="common_back">Back</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_continue">Continue</string>
+    <string name="common_delete">Delete</string>
+    <string name="common_ok">OK</string>
+    <string name="common_save">Save</string>
+    <string name="common_saving">Saving…</string>
+    <string name="common_retry">Retry</string>
+    <string name="common_not_now">Not now</string>
+    <string name="common_open_settings">Open settings</string>
+    <string name="common_not_available">Not available</string>
+    <string name="common_just_now">Just now</string>
+    <string name="common_no_app">No app on this phone can open this.</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_journey">Journey</string>
+    <string name="nav_guardians">Guardians</string>
+    <string name="nav_history">History</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Lock -->
+    <string name="lock_prompt_title">Unlock SafeHer</string>
+    <string name="lock_prompt_subtitle">Confirm it\'s you to open the app</string>
+    <string name="lock_locked_title">SafeHer is locked</string>
+    <string name="lock_unlock">Unlock</string>
+
+    <!-- Welcome -->
+    <string name="welcome_heading">Your Safety Matters</string>
+    <string name="welcome_description">Alert the people you trust, share where you are, and reach emergency help quickly — all from one place.</string>
+    <string name="welcome_local_note">Your account and data are stored only on this phone.</string>
+    <string name="welcome_get_started">Get Started</string>
+    <string name="welcome_login">Log in</string>
+    <string name="welcome_privacy_policy">Privacy Policy</string>
+    <string name="welcome_terms">Terms and Conditions</string>
+
+    <!-- Shared fields -->
+    <string name="field_full_name">Full name</string>
+    <string name="field_phone">Phone number</string>
+    <string name="field_phone_helper">e.g. 0300 1234567 or +92 300 1234567</string>
+    <string name="field_password">Password</string>
+    <string name="field_password_helper">At least 8 characters, with a letter and a number</string>
+    <string name="field_confirm_password">Confirm password</string>
+    <string name="field_blood_group">Blood group (optional)</string>
+    <string name="field_medical_notes">Medical notes (optional)</string>
+
+    <!-- Validation -->
+    <string name="error_name_required">Enter your name.</string>
+    <string name="error_name_invalid">Use 2–60 characters.</string>
+    <string name="error_phone_required">Enter a phone number.</string>
+    <string name="error_phone_invalid">Enter a valid mobile number, like 0300 1234567.</string>
+    <string name="error_phone_exists">An account with this number already exists on this phone.</string>
+    <string name="error_password_required">Enter a password.</string>
+    <string name="error_password_weak">Use at least 8 characters, including a letter and a number.</string>
+    <string name="error_confirm_required">Re-enter your password.</string>
+    <string name="error_password_mismatch">Passwords don\'t match.</string>
+    <string name="error_terms_required">Please accept the Terms and Privacy Policy to continue.</string>
+    <string name="error_save_failed">Couldn\'t save. Please try again.</string>
+
+    <!-- Login -->
+    <string name="login_heading">Welcome Back</string>
+    <string name="login_subtitle">Log in with your phone number and password.</string>
+    <string name="login_button">Log in</string>
+    <string name="login_loading">Logging in…</string>
+    <string name="login_no_account">New to SafeHer?</string>
+    <string name="login_create_account">Create account</string>
+    <string name="login_error_invalid_credentials">The phone number or password is incorrect.</string>
+    <string name="login_forgot_note">Accounts are stored only on this phone, so passwords can\'t be reset by SMS. If you forget yours, clear the app\'s data and register again.</string>
+
+    <!-- Register -->
+    <string name="register_heading">Create Account</string>
+    <string name="register_subtitle">It takes less than a minute.</string>
+    <string name="register_terms">I agree to the Terms and Conditions and the Privacy Policy</string>
+    <string name="register_create_account">Create account</string>
+    <string name="register_loading">Creating account…</string>
+    <string name="register_have_account">Already have an account?</string>
+
+    <!-- Profile -->
+    <string name="profile_setup_heading">Complete Your Profile</string>
+    <string name="profile_edit_heading">Your Profile</string>
+    <string name="profile_edit_title">Edit profile</string>
+    <string name="profile_setup_subtitle">Only your name is required. You can change this later.</string>
+    <string name="profile_choose_photo">Choose photo</string>
+    <string name="profile_phone_unverified">Not verified — local account on this phone</string>
+    <string name="profile_section_medical">Medical information</string>
+    <string name="profile_medical_privacy">Private to you. It stays on this phone and is never included in SOS messages.</string>
+    <string name="profile_setup_save">Save profile</string>
+    <string name="profile_saved">Profile saved.</string>
+    <string name="profile_error_photo">Couldn\'t use that photo. Try another one.</string>
+    <string name="blood_group_unspecified">Prefer not to say</string>
+
+    <!-- Home -->
+    <string name="home_greeting">Hello, %1$s</string>
+    <string name="home_greeting_default">Hello</string>
+    <string name="home_sos_title">SOS</string>
+    <string name="home_sos_hold_short">HOLD 2 SEC</string>
+    <string name="home_sos_hold">Press and hold for 2 seconds</string>
+    <string name="home_sos_keep_holding">Keep holding…</string>
+    <string name="home_sos_released_early">Released too early. Hold for the full 2 seconds.</string>
+    <string name="home_sos_sub_countdown">You\'ll get %1$d seconds to cancel</string>
+    <string name="home_sos_sub_active">An emergency is already active — tap to view it</string>
+    <string name="home_sos_content_description">SOS. Press and hold for 2 seconds to start an emergency alert.</string>
+    <string name="home_sos_active_title">Emergency active</string>
+    <string name="home_sos_active_detail">Started at %1$s · tap to view status</string>
+    <string name="home_journey_active_title">Journey to %1$s</string>
+    <string name="home_journey_eta">Expected by %1$s</string>
+    <string name="home_journey_late">Past expected arrival — tap to check in</string>
+    <string name="home_safety_status">Safety status</string>
+    <string name="home_fix_add_guardian">Add a trusted guardian</string>
+    <string name="home_fix_permissions">Allow location and SMS</string>
+    <string name="home_fix_location_on">Turn on location</string>
+    <string name="home_quick_actions">Quick actions</string>
+    <string name="home_safe_journey">Safe Journey</string>
+    <string name="home_guardians">Guardians</string>
+    <string name="home_fake_call">Fake Call</string>
+    <string name="home_helplines">Emergency Helplines</string>
+    <string name="home_live_location">My Location</string>
+    <string name="home_evidence">Record Evidence</string>
+    <string name="home_location_title">Location</string>
+    <string name="home_recent_activity">Recent activity</string>
+    <string name="home_see_all">See all</string>
+    <string name="home_no_activity_title">No activity yet</string>
+    <string name="home_no_activity">SOS alerts and journeys will appear here.</string>
+
+    <!-- Status rows -->
+    <string name="status_row_guardians">Guardian network</string>
+    <string name="status_row_location">Location</string>
+    <string name="status_row_sms">SOS text alerts</string>
+    <string name="status_row_shake">Shake to SOS</string>
+    <string name="status_guardians_none">No guardians added</string>
+    <string name="status_location_no_permission">Permission not granted</string>
+    <string name="status_location_disabled">Location is turned off on this phone</string>
+    <string name="status_location_ready">Permission granted and location on</string>
+    <string name="status_sms_no_telephony">This device can\'t send SMS</string>
+    <string name="status_sms_no_permission">SMS permission not granted</string>
+    <string name="status_sms_no_guardians">No one to text yet</string>
+    <string name="status_sms_ready">Sent from your SIM to your guardians</string>
+    <string name="status_shake_on">On while SafeHer is open</string>
+    <string name="status_shake_off">Off — turn on in Settings</string>
+    <string name="status_chip_ready">Ready</string>
+    <string name="status_chip_missing">Missing</string>
+    <string name="status_chip_off">Off</string>
+
+    <!-- Status labels -->
+    <string name="status_not_started">Not started</string>
+    <string name="status_pending">Pending</string>
+    <string name="status_in_progress">In progress</string>
+    <string name="status_sent">Sent</string>
+    <string name="status_delivered">Delivered</string>
+    <string name="status_partial">Partly sent</string>
+    <string name="status_failed">Failed</string>
+    <string name="status_unavailable">Unavailable</string>
+    <string name="status_completed">Completed</string>
+    <string name="status_last_known">Last known</string>
+    <string name="status_saved_locally">Saved locally</string>
+    <string name="status_active">Active</string>
+    <string name="status_delayed">Delayed</string>
+    <string name="status_resolved">Resolved</string>
+    <string name="status_cancelled">Cancelled</string>
+    <string name="status_emergency_active">Emergency active</string>
+
+    <string name="trigger_button">SOS button</string>
+    <string name="trigger_shake">Shake</string>
+    <string name="trigger_journey">Safe Journey</string>
+
+    <!-- Permissions -->
+    <string name="permission_sos_title">Get SOS alerts ready</string>
+    <string name="permission_sos_message">SafeHer uses your location to include where you are in an SOS, and SMS to text your guardians from your own SIM when you trigger one. Normal SMS charges may apply. Nothing is sent unless you start an SOS.</string>
+    <string name="permission_denied_title">Permission needed</string>
+    <string name="permission_denied_message">SMS alerts stay off until you allow SMS for SafeHer in the app settings.</string>
+
+    <!-- Location -->
+    <string name="location_title">My Location</string>
+    <string name="location_details">Details</string>
+    <string name="location_open_map">Open map</string>
+    <string name="location_refresh">Refresh</string>
+    <string name="location_locating">Locating…</string>
+    <string name="location_allow">Allow location</string>
+    <string name="location_none_yet">No location yet</string>
+    <string name="location_tap_refresh">Tap Refresh to find your current location.</string>
+    <string name="location_permission_missing">Location permission not granted</string>
+    <string name="location_permission_granted">Granted</string>
+    <string name="location_permission_reason">Allow location so SOS messages can say where you are.</string>
+    <string name="location_meta_current">Current · updated %1$s · ±%2$d m</string>
+    <string name="location_meta_last_known">Last known, not live · from %1$s · ±%2$d m</string>
+    <string name="location_fresh_failed">Couldn\'t get a new fix. Showing the last known location.</string>
+    <string name="location_chip_current">Current</string>
+    <string name="location_chip_tracking">Live on this screen</string>
+    <string name="location_row_permission">Permission</string>
+    <string name="location_row_accuracy">Accuracy</string>
+    <string name="location_row_updated">Fix time</string>
+    <string name="location_row_source">Source</string>
+    <string name="location_accuracy_value">±%1$d m</string>
+    <string name="location_start_tracking">Live updates</string>
+    <string name="location_stop_tracking">Stop updates</string>
+    <string name="location_coords_cd">Latitude %1$.5f, longitude %2$.5f</string>
+    <string name="location_local_note">No map is built into this version — Open map uses your maps app. Live updates show here only; they are not shared with anyone.</string>
+    <string name="location_summary">%1$s · ±%2$d m</string>
+    <string name="location_summary_last_known">Last known: %1$s</string>
+
+    <!-- SOS -->
+    <string name="sos_activating">SOS ACTIVATING</string>
+    <string name="sos_triggered_by">Started by: %1$s</string>
+    <string name="sos_what_next">When the countdown ends, SafeHer saves an emergency record, tries to find your location, and texts your guardians from your SIM.</string>
+    <string name="sos_cancel">Cancel SOS</string>
+    <string name="sos_send_now">Send now</string>
+    <string name="sos_cancelled">SOS cancelled. Nothing was sent.</string>
+    <string name="sos_error_record">Couldn\'t create the emergency record. Call 15 directly if you need help.</string>
+    <string name="sos_resolve">I\'m safe</string>
+    <string name="sos_started_at">Started</string>
+    <string name="sos_trigger_type">Trigger</string>
+    <string name="sos_location_status">Location</string>
+    <string name="sos_alert_status">Guardian alerts</string>
+    <string name="sos_evidence_status">Evidence</string>
+    <string name="sos_sms_default_name">A SafeHer user</string>
+    <string name="sos_sms_message">SOS from %1$s via SafeHer: I need help. %2$s</string>
+    <string name="sos_sms_manual_message">SOS via SafeHer: I need help. %1$s</string>
+    <string name="sos_sms_location">My location: %1$s (±%2$dm at %3$s)</string>
+    <string name="sos_sms_location_last_known">Last known location: %1$s (±%2$dm at %3$s, may be outdated)</string>
+    <string name="sos_sms_location_unavailable">My location is unavailable.</string>
+    <string name="sos_error_sms_unavailable">SMS unavailable</string>
+    <string name="sos_error_sms_rejected">Phone refused to send</string>
+    <string name="sos_error_no_service">No mobile service</string>
+    <string name="sos_error_radio_off">Airplane mode or radio off</string>
+    <string name="sos_error_generic">Not sent (code %1$d)</string>
+
+    <!-- Emergency status -->
+    <string name="emergency_title">Emergency status</string>
+    <string name="emergency_active">EMERGENCY ACTIVE</string>
+    <string name="emergency_active_since">Started %1$s</string>
+    <string name="emergency_inactive">Emergency resolved</string>
+    <string name="emergency_resolved_at">Resolved %1$s</string>
+    <string name="emergency_section_overview">Overview</string>
+    <string name="emergency_section_location">Location</string>
+    <string name="emergency_section_alerts">Guardian alerts</string>
+    <string name="emergency_section_evidence">Evidence</string>
+    <string name="emergency_row_record">Emergency record</string>
+    <string name="emergency_record_saved">Saved on this phone</string>
+    <string name="emergency_location_meta">±%1$d m · fix at %2$s</string>
+    <string name="emergency_location_searching">Looking for your location…</string>
+    <string name="emergency_location_unavailable">Location permission is off or location is turned off</string>
+    <string name="emergency_location_failed">No location could be found</string>
+    <string name="emergency_alert_waiting_location">Waiting for location before texting guardians…</string>
+    <string name="emergency_alert_none_sent">No alerts were sent</string>
+    <string name="emergency_alert_note_sent_meaning">“Sent” means your phone network accepted the SMS. “Delivered” appears only if the network confirms delivery.</string>
+    <string name="emergency_alert_note_unavailable">Automatic alerts need at least one guardian and SMS permission. You can still text someone yourself.</string>
+    <string name="emergency_alert_manual_sms">Write SOS text myself</string>
+    <string name="emergency_evidence_saved">Audio recording saved on this phone</string>
+    <string name="emergency_evidence_none">No recording for this emergency</string>
+    <string name="emergency_record_audio">Record audio evidence</string>
+    <string name="emergency_local_note">SafeHer has no server. Guardians only hear from you by SMS; they can\'t see live tracking or this screen.</string>
+    <string name="emergency_call_police">Call 15</string>
+    <string name="emergency_resolve_title">Mark yourself safe?</string>
+    <string name="emergency_resolve_message">This ends the emergency in SafeHer. Your guardians are not told automatically — let them know you\'re safe.</string>
+    <string name="emergency_resolve_confirm">Yes, I\'m safe</string>
+    <string name="emergency_resolve_keep">Keep active</string>
+
+    <!-- Guardians -->
+    <string name="guardians_title">Guardians</string>
+    <string name="guardians_subtitle_empty">People who get your SOS texts</string>
+    <string name="guardians_local_note">Guardians are saved on this phone only. They aren\'t invited or notified when you add them — tell them yourself. During an SOS, each one gets a text from your SIM.</string>
+    <string name="guardians_list_label">Your guardians</string>
+    <string name="guardians_add">Add guardian</string>
+    <string name="guardians_add_title">Add guardian</string>
+    <string name="guardians_edit_title">Edit guardian</string>
+    <string name="guardians_empty_title">No trusted guardians yet</string>
+    <string name="guardians_empty_message">Add someone you trust to receive your SOS text alerts.</string>
+    <string name="guardians_pick_contact">Choose from contacts</string>
+    <string name="guardians_contact_no_number">That contact has no phone number. Type one in.</string>
+    <string name="guardians_name">Guardian name</string>
+    <string name="guardians_phone">Phone number</string>
+    <string name="guardians_relationship">Relationship (optional)</string>
+    <string name="guardians_tier">Priority</string>
+    <string name="guardians_tier_primary">Tier 1 · Primary</string>
+    <string name="guardians_tier_secondary">Tier 2 · Secondary</string>
+    <string name="guardians_tier_primary_chip">Tier 1</string>
+    <string name="guardians_tier_secondary_chip">Tier 2</string>
+    <string name="guardians_tier_help">Tier 1 contacts are texted first. Everyone you add gets the SOS text.</string>
+    <string name="guardians_add_note">Saving does not send anything to this person.</string>
+    <string name="guardians_save">Save guardian</string>
+    <string name="guardians_not_invited">Not invited</string>
+    <string name="guardians_added">%1$s added.</string>
+    <string name="guardians_updated">%1$s updated.</string>
+    <string name="guardians_removed">%1$s removed.</string>
+    <string name="guardians_error_duplicate">You\'ve already added this number.</string>
+    <string name="guardians_error_self">This is your own number.</string>
+    <string name="guardians_error_save">Couldn\'t save this guardian. Please try again.</string>
+    <string name="guardians_error_remove">Couldn\'t remove this guardian.</string>
+    <string name="guardians_error_load">Couldn\'t load your guardians.</string>
+    <string name="guardians_delete_title">Remove guardian?</string>
+    <string name="guardians_delete_message">%1$s will no longer get your SOS texts.</string>
+    <string name="guardians_delete_confirm">Remove</string>
+    <string name="guardians_edit_cd">Edit %1$s</string>
+    <string name="guardians_remove_cd">Remove %1$s</string>
+
+    <!-- Journey -->
+    <string name="journey_title">Safe Journey</string>
+    <string name="journey_subtitle">Set where you\'re going and when you expect to arrive.</string>
+    <string name="journey_destination">Destination</string>
+    <string name="journey_expected_arrival">Expected arrival</string>
+    <string name="journey_in_15">In 15 min</string>
+    <string name="journey_in_30">In 30 min</string>
+    <string name="journey_in_60">In 1 hour</string>
+    <string name="journey_pick_time">Pick time</string>
+    <string name="journey_eta_hint">Choose when you expect to arrive.</string>
+    <string name="journey_eta_chosen">Arriving by %1$s (in about %2$d min)</string>
+    <string name="journey_route_optional">Route or notes (optional)</string>
+    <string name="journey_start">Start journey</string>
+    <string name="journey_error_destination">Enter where you\'re going.</string>
+    <string name="journey_error_eta">Choose an arrival time in the future.</string>
+    <string name="journey_heading_to">Heading to</string>
+    <string name="journey_eta">ETA</string>
+    <string name="journey_elapsed">Elapsed</string>
+    <string name="journey_remaining">Remaining</string>
+    <string name="journey_overdue">Overdue by</string>
+    <string name="journey_delayed_title">Are you safe?</string>
+    <string name="journey_delayed_message">You\'re past your expected arrival time.</string>
+    <string name="journey_im_safe_extend">I\'m safe, +15 min</string>
+    <string name="journey_start_sos">Start SOS</string>
+    <string name="journey_end">I\'ve arrived</string>
+    <string name="journey_share_sms">Share trip by SMS</string>
+    <string name="journey_share_body">I\'m on my way to %1$s and expect to arrive around %2$s. (Sent via SafeHer)</string>
+    <string name="journey_cancel">Cancel journey</string>
+    <string name="journey_cancel_title">Cancel this journey?</string>
+    <string name="journey_cancel_message">It will be saved in your history as cancelled.</string>
+    <string name="journey_cancel_confirm">Cancel journey</string>
+    <string name="journey_cancel_keep">Keep going</string>
+    <string name="journey_extended">Expected arrival moved 15 minutes later.</string>
+    <string name="journey_completed_msg">Journey completed. Glad you\'re safe.</string>
+    <string name="journey_cancelled_msg">Journey cancelled.</string>
+    <string name="journey_not_monitored">Journeys are tracked on this phone only. Guardians aren\'t monitoring them — use Share trip by SMS to tell someone.</string>
+
+    <!-- Fake call -->
+    <string name="fake_call_title">Fake Call</string>
+    <string name="fake_call_intro">Schedule a pretend incoming call to give yourself a reason to leave.</string>
+    <string name="fake_call_caller_name">Caller name</string>
+    <string name="fake_call_default_caller">Mom</string>
+    <string name="fake_call_delay">Ring in</string>
+    <string name="fake_call_now">Now</string>
+    <string name="fake_call_seconds">%1$d sec</string>
+    <string name="fake_call_minutes">%1$d min</string>
+    <string name="fake_call_simulation_note">This is a simulation. No real call is made or received. Keep SafeHer open so the call screen can appear.</string>
+    <string name="fake_call_schedule">Schedule fake call</string>
+    <string name="fake_call_cancel_schedule">Cancel</string>
+    <string name="fake_call_in">Ringing in %1$d s…</string>
+    <string name="fake_call_incoming">Incoming call</string>
+    <string name="fake_call_mobile">Mobile</string>
+    <string name="fake_call_accept">Accept</string>
+    <string name="fake_call_decline">Decline</string>
+    <string name="fake_call_end">End call</string>
+    <string name="fake_call_note_answered">Simulated call answered</string>
+    <string name="fake_call_note_declined">Simulated call declined</string>
+
+    <!-- Helplines -->
+    <string name="helplines_title">Emergency Helplines</string>
+    <string name="helplines_region_note">These numbers are for Pakistan. Tapping Call opens your phone\'s dialer — you press call.</string>
+    <string name="helplines_call">Call</string>
+    <string name="helplines_call_cd">Call %1$s, %2$s</string>
+    <string name="helpline_police_number" translatable="false">15</string>
+    <string name="helpline_police_name">Police Emergency</string>
+    <string name="helpline_police_desc">Police help for crimes and immediate danger</string>
+    <string name="helpline_rescue_number" translatable="false">1122</string>
+    <string name="helpline_rescue_name">Rescue 1122</string>
+    <string name="helpline_rescue_desc">Ambulance, fire and rescue services</string>
+    <string name="helpline_women_number" translatable="false">1043</string>
+    <string name="helpline_women_name">Women\'s Helpline</string>
+    <string name="helpline_women_desc">Support for women facing violence or harassment</string>
+    <string name="helpline_child_number" translatable="false">1098</string>
+    <string name="helpline_child_name">Child Protection Helpline</string>
+    <string name="helpline_child_desc">Help for children at risk</string>
+
+    <!-- Evidence -->
+    <string name="evidence_title">Record Evidence</string>
+    <string name="evidence_recording">Recording</string>
+    <string name="evidence_recording_detail">Recording audio. Keep this screen open.</string>
+    <string name="evidence_saved_detail">Saved privately on this phone.</string>
+    <string name="evidence_failed_detail">Recording couldn\'t be saved. Try again.</string>
+    <string name="evidence_ready_detail">Records audio from the microphone while this screen is open.</string>
+    <string name="evidence_permission_needed">Microphone permission is needed to record.</string>
+    <string name="evidence_start_recording">Start recording</string>
+    <string name="evidence_stop">Stop and save</string>
+    <string name="evidence_stopped_on_leave">Recording stopped and saved because you left the screen.</string>
+    <string name="evidence_status_section">Status</string>
+    <string name="evidence_row_permission">Microphone</string>
+    <string name="evidence_permission_granted">Permission granted</string>
+    <string name="evidence_permission_not_granted">Permission not granted</string>
+    <string name="evidence_row_local">Local save</string>
+    <string name="evidence_local_value">Private app storage on this phone</string>
+    <string name="evidence_row_upload">Upload</string>
+    <string name="evidence_upload_none">No server is set up — recordings are not uploaded</string>
+    <string name="evidence_recordings">Recordings</string>
+    <string name="evidence_empty_title">No recordings</string>
+    <string name="evidence_empty_message">Recordings you make will be listed here.</string>
+    <string name="evidence_item_meta">Audio · %1$s</string>
+    <string name="evidence_play_cd">Play recording</string>
+    <string name="evidence_delete_cd">Delete recording</string>
+    <string name="evidence_play_failed">Couldn\'t play this recording.</string>
+    <string name="evidence_delete_title">Delete recording?</string>
+    <string name="evidence_delete_message">The audio file will be permanently removed from this phone.</string>
+    <string name="evidence_permission_title">Microphone permission</string>
+    <string name="evidence_permission_denied">Allow the microphone for SafeHer in app settings to record evidence.</string>
+    <string name="evidence_history_note">Audio recording, %1$s</string>
+    <string name="evidence_note">Recording only happens while you can see this screen. Files stay in SafeHer\'s private storage and are deleted with your account.</string>
+
+    <!-- History -->
+    <string name="history_title">History</string>
+    <string name="history_subtitle">Stored on this phone</string>
+    <string name="history_filter_all">All</string>
+    <string name="history_filter_sos">SOS</string>
+    <string name="history_filter_journey">Journey</string>
+    <string name="history_filter_other">Other</string>
+    <string name="history_empty_title">No history yet</string>
+    <string name="history_empty_filtered_title">Nothing here yet</string>
+    <string name="history_empty_message">Your SOS alerts, journeys and other safety events will appear here.</string>
+    <string name="history_error_title">Couldn\'t load history</string>
+    <string name="history_error_message">Something went wrong reading this phone\'s records.</string>
+    <string name="history_type_sos">SOS alert</string>
+    <string name="history_type_journey">Safe journey</string>
+    <string name="history_type_journey_to">Journey to %1$s</string>
+    <string name="history_type_fake_call">Fake call</string>
+    <string name="history_type_evidence">Audio evidence</string>
+    <string name="history_type_other">Safety event</string>
+    <string name="history_meta_with_trigger">%1$s · %2$s</string>
+    <string name="history_details_title">Event details</string>
+    <string name="history_row_started">Started</string>
+    <string name="history_row_ended">Ended</string>
+    <string name="history_row_notes">Notes</string>
+    <string name="history_delete">Delete from history</string>
+    <string name="history_delete_title">Delete this event?</string>
+    <string name="history_delete_message">It will be removed from this phone. This can\'t be undone.</string>
+    <string name="history_deleted">Event deleted.</string>
+    <string name="history_delete_failed">Couldn\'t delete this event.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_account">Account</string>
+    <string name="settings_profile">Profile</string>
+    <string name="settings_profile_sub">Name, photo and medical details</string>
+    <string name="settings_change_password">Change password</string>
+    <string name="settings_current_password">Current password</string>
+    <string name="settings_new_password">New password</string>
+    <string name="settings_password_changed">Password changed.</string>
+    <string name="settings_wrong_password">That password is incorrect.</string>
+    <string name="settings_logout">Log out</string>
+    <string name="settings_logout_message">Your data stays on this phone. Shake SOS and alerts won\'t work until you log back in.</string>
+    <string name="settings_delete_account">Delete local account</string>
+    <string name="settings_delete_account_sub">Removes your account and all its data from this phone</string>
+    <string name="settings_delete_account_message">This permanently deletes your account, guardians, history and recordings from this phone. Enter your password to confirm.</string>
+    <string name="settings_account_deleted">Your account was deleted from this phone.</string>
+    <string name="settings_safety">Safety</string>
+    <string name="settings_sos_cancellation">SOS cancel countdown</string>
+    <string name="settings_sos_cancellation_sub">Time to cancel before alerts go out</string>
+    <string name="settings_seconds">%1$d sec</string>
+    <string name="settings_shake_sos">Shake to SOS</string>
+    <string name="settings_shake_sub">Shake firmly 3 times. Works only while SafeHer is open on screen.</string>
+    <string name="settings_voice_trigger">Voice trigger</string>
+    <string name="settings_not_in_version">Not available in this version</string>
+    <string name="settings_power_button">Power-button trigger</string>
+    <string name="settings_not_supported">Not supported in this version</string>
+    <string name="settings_permissions">App permissions</string>
+    <string name="settings_permissions_sub">Location, SMS and microphone</string>
+    <string name="settings_privacy">Privacy</string>
+    <string name="settings_location_prefs">Location access</string>
+    <string name="settings_location_on">Allowed · location is on</string>
+    <string name="settings_location_off">Not allowed</string>
+    <string name="settings_evidence_prefs">Evidence recordings</string>
+    <string name="settings_evidence_sub">Play or delete saved recordings</string>
+    <string name="settings_clear_history">Clear history</string>
+    <string name="settings_clear_history_sub">Delete finished SOS, journey and other records</string>
+    <string name="settings_clear_history_message">All finished events will be deleted from this phone. Any active emergency or journey is kept.</string>
+    <string name="settings_security">Security</string>
+    <string name="settings_biometric_lock">Biometric app lock</string>
+    <string name="settings_biometric_sub">Ask for fingerprint or face when SafeHer opens</string>
+    <string name="settings_biometric_unavailable">No fingerprint or face unlock set up on this phone</string>
+    <string name="settings_biometric_unavailable_long">Set up fingerprint or face unlock in your phone\'s settings first, then come back to turn this on.</string>
+    <string name="settings_biometric_confirm_title">Confirm to turn on app lock</string>
+    <string name="settings_biometric_enabled">App lock is on.</string>
+    <string name="settings_session">Session</string>
+    <string name="settings_session_sub">You stay logged in on this phone until you log out</string>
+    <string name="settings_about">About</string>
+    <string name="settings_version">Version</string>
+    <string name="settings_privacy_policy">Privacy Policy</string>
+    <string name="settings_terms">Terms and Conditions</string>
+    <string name="settings_help">Help</string>
+    <string name="settings_on">On</string>
+    <string name="settings_off">Off</string>
+
+    <!-- Legal and help -->
+    <string name="privacy_policy_title">Privacy Policy</string>
+    <string name="privacy_policy_body">SafeHer stores your account, profile, guardians, history and recordings only on this phone, in the app\'s private storage. There is no SafeHer server and nothing is uploaded.\n\nWhen you trigger an SOS, SafeHer sends a text message from your SIM to the guardians you added. It contains your first name and, if available, your location. Your medical details are never included.\n\nPasswords are stored only as salted PBKDF2 hashes. Uninstalling the app or clearing its data permanently deletes everything.</string>
+    <string name="terms_title">Terms and Conditions</string>
+    <string name="terms_body">SafeHer is a personal safety aid, not an emergency service. It cannot guarantee that alerts are delivered, that a location is accurate, or that anyone responds.\n\nSMS alerts depend on your mobile network, balance and signal, and normal charges may apply. In immediate danger, call 15 or 1122.\n\nOnly add guardians who have agreed to receive your alerts. Use evidence recording in line with the law where you are.</string>
+    <string name="help_title">How SafeHer works</string>
+    <string name="help_body">SOS: press and hold the red button for 2 seconds. A countdown lets you cancel. Then SafeHer saves a record, looks for your location and texts your guardians.\n\nGuardians: add trusted people with their phone numbers. Tell them you\'ve added them — SafeHer does not.\n\nSafe Journey: set a destination and arrival time, and tap I\'ve arrived when you get there.\n\nFake Call: schedule a pretend incoming call to help you leave a situation.</string>
+
+    <!-- Plurals -->
+    <plurals name="status_guardians_count">
+        <item quantity="one">%1$d guardian · %2$d in Tier 1</item>
+        <item quantity="other">%1$d guardians · %2$d in Tier 1</item>
+    </plurals>
+    <plurals name="sos_seconds_left">
+        <item quantity="one">%1$d second left</item>
+        <item quantity="other">%1$d seconds left</item>
+    </plurals>
+    <plurals name="emergency_alert_count">
+        <item quantity="one">%1$d of %2$d guardian texted</item>
+        <item quantity="other">%1$d of %2$d guardians texted</item>
+    </plurals>
+    <plurals name="settings_history_cleared">
+        <item quantity="one">%1$d event deleted.</item>
+        <item quantity="other">%1$d events deleted.</item>
+    </plurals>
+
+    <!-- Arrays -->
+    <string-array name="blood_groups">
+        <item>@string/blood_group_unspecified</item>
+        <item>A+</item>
+        <item>A−</item>
+        <item>B+</item>
+        <item>B−</item>
+        <item>AB+</item>
+        <item>AB−</item>
+        <item>O+</item>
+        <item>O−</item>
+    </string-array>
+    <string-array name="relationships">
+        <item>Mother</item>
+        <item>Father</item>
+        <item>Sister</item>
+        <item>Brother</item>
+        <item>Spouse</item>
+        <item>Friend</item>
+        <item>Relative</item>
+        <item>Colleague</item>
+        <item>Other</item>
+    </string-array>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_light">#2E2650</color>
+    <color name="primary_dark">#D6CCFF</color>
+    <color name="accent_text">#B9A6FF</color>
+
+    <color name="emergency_red_light">#3D161A</color>
+    <color name="emergency_red_text">#FF8A92</color>
+    <color name="sos_ring">#5A1F26</color>
+
+    <color name="background">#121220</color>
+    <color name="surface">#1D1D2C</color>
+    <color name="main_text">#ECECF4</color>
+    <color name="secondary_text">#A9A9BC</color>
+    <color name="divider">#33334A</color>
+    <color name="outline">#4C4C64</color>
+    <color name="neutral_chip_bg">#2A2A3C</color>
+    <color name="neutral_chip_text">#C9C9D9</color>
+
+    <color name="success_light">#12382A</color>
+    <color name="success_text">#6FD3A6</color>
+    <color name="warning_light">#3A2A10</color>
+    <color name="warning_text">#F0B860</color>
+</resources>

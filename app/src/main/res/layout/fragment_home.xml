@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/screen_padding"
+        android:paddingTop="@dimen/spacing_md"
+        android:paddingEnd="@dimen/screen_padding"
+        android:paddingBottom="@dimen/spacing_lg">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/avatar"
+                android:layout_width="@dimen/avatar_size_small"
+                android:layout_height="@dimen/avatar_size_small"
+                android:background="@drawable/bg_avatar"
+                android:importantForAccessibility="no">
+
+                <TextView
+                    android:id="@+id/tvAvatarInitial"
+                    style="@style/Text.SafeHer.Section"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/primary_dark" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/ivAvatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.SafeHer.Circle" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvGreeting"
+                    style="@style/Text.SafeHer.Heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:accessibilityHeading="true"
+                    android:ellipsize="end"
+                    android:maxLines="1" />
+
+                <TextView
+                    style="@style/Text.SafeHer.Supporting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_tagline" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnSettings"
+                style="@style/Widget.SafeHer.IconButton"
+                android:contentDescription="@string/nav_settings"
+                android:src="@drawable/ic_settings" />
+        </LinearLayout>
+
+        <!-- Active emergency -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardActiveSos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/emergency_red"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/card_padding">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_medium"
+                    android:layout_height="@dimen/icon_size_medium"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_warning"
+                    app:tint="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Text.SafeHer.Section"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_sos_active_title"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tvActiveSosDetail"
+                        style="@style/Text.SafeHer.Supporting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_medium"
+                    android:layout_height="@dimen/icon_size_medium"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_chevron_right"
+                    app:tint="@color/white" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Active journey -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardActiveJourney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/primary_light"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/card_padding">
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_medium"
+                    android:layout_height="@dimen/icon_size_medium"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_journey"
+                    app:tint="@color/primary_dark" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvActiveJourneyTitle"
+                        style="@style/Text.SafeHer.Section"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primary_dark" />
+
+                    <TextView
+                        android:id="@+id/tvActiveJourneyDetail"
+                        style="@style/Text.SafeHer.Supporting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primary_dark" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_medium"
+                    android:layout_height="@dimen/icon_size_medium"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_chevron_right"
+                    app:tint="@color/primary_dark" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- SOS -->
+        <FrameLayout
+            android:layout_width="@dimen/sos_ring_size"
+            android:layout_height="@dimen/sos_ring_size"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/spacing_lg"
+            android:background="@drawable/bg_sos_halo">
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/sosProgress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:importantForAccessibility="no"
+                android:max="1000"
+                app:indicatorColor="@color/emergency_red"
+                app:indicatorSize="@dimen/sos_ring_size"
+                app:trackColor="@android:color/transparent"
+                app:trackThickness="10dp" />
+
+            <LinearLayout
+                android:id="@+id/btnSos"
+                android:layout_width="@dimen/sos_button_size"
+                android:layout_height="@dimen/sos_button_size"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_sos_button"
+                android:clickable="true"
+                android:contentDescription="@string/home_sos_content_description"
+                android:elevation="6dp"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:importantForAccessibility="no"
+                    android:letterSpacing="0.08"
+                    android:text="@string/home_sos_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_sos" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    android:text="@string/home_sos_hold_short"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvSosHint"
+            style="@style/Text.SafeHer.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:accessibilityLiveRegion="polite"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="@string/home_sos_hold" />
+
+        <TextView
+            android:id="@+id/tvSosSubHint"
+            style="@style/Text.SafeHer.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:gravity="center" />
+
+        <!-- Safety status -->
+        <TextView
+            style="@style/Widget.SafeHer.SectionHeader"
+            android:text="@string/home_safety_status" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/card_padding"
+                android:paddingTop="8dp"
+                android:paddingEnd="@dimen/card_padding"
+                android:paddingBottom="8dp">
+
+                <include
+                    android:id="@+id/rowGuardians"
+                    layout="@layout/item_status_row" />
+
+                <include
+                    android:id="@+id/rowLocation"
+                    layout="@layout/item_status_row" />
+
+                <include
+                    android:id="@+id/rowSms"
+                    layout="@layout/item_status_row" />
+
+                <include
+                    android:id="@+id/rowShake"
+                    layout="@layout/item_status_row" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnFixSetup"
+                    style="@style/Widget.SafeHer.Button.Secondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Quick actions -->
+        <TextView
+            style="@style/Widget.SafeHer.SectionHeader"
+            android:text="@string/home_quick_actions" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-6dp"
+            android:layout_marginEnd="-6dp"
+            android:columnCount="2"
+            android:useDefaultMargins="false">
+
+            <include
+                android:id="@+id/qaJourney"
+                layout="@layout/item_quick_action"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1" />
+
+            <include
+                android:id="@+id/qaGuardians"
+                layout="@layout/item_quick_action"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1" />
+
+            <include
+                android:id="@+id/qaFakeCall"
+                layout="@layout/item_quick_action"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1" />
+
+            <include
+                android:id="@+id/qaHelplines"
+                layout="@layout/item_quick_action"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1" />
+
+            <include
+                android:id="@+id/qaLocation"
+                layout="@layout/item_quick_action"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1" />
+
+            <include
+                android:id="@+id/qaEvidence"
+                layout="@layout/item_quick_action"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1" />
+        </GridLayout>
+
+        <!-- Location -->
+        <TextView
+            style="@style/Widget.SafeHer.SectionHeader"
+            android:text="@string/home_location_title" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/icon_size_medium"
+                        android:layout_height="@dimen/icon_size_medium"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/ic_location"
+                        app:tint="@color/accent_text" />
+
+                    <TextView
+                        android:id="@+id/tvLocationValue"
+                        style="@style/Text.SafeHer.Body"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <TextView
+                        android:id="@+id/tvLocationChip"
+                        style="@style/Widget.SafeHer.StatusChip" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvLocationMeta"
+                    style="@style/Text.SafeHer.Supporting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnLocationPrimary"
+                        style="@style/Widget.SafeHer.Button.Secondary"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnOpenMap"
+                        style="@style/Widget.SafeHer.Button.Outlined"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/location_open_map"
+                        app:icon="@drawable/ic_map" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Recent activity -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Widget.SafeHer.SectionHeader"
+                android:layout_width="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:text="@string/home_recent_activity" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSeeAll"
+                style="@style/Widget.SafeHer.Button.Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_see_all" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recentList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/recentEmptyCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <include
+                android:id="@+id/recentEmpty"
+                layout="@layout/view_empty_state" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
